@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Gerador de Senhas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+		
+		<div id="senha">
+			<H2 id="titulo">Gerador de Senha</H2>
+			<input type="number" id="qtdChar" placeholder="Quantos caracteres:"/><br>
+			<input type="checkbox" id="incNumbers">
+			Incluir números <br>
+			<input type="checkbox" id="incLetter">
+			Incluir letras
+			<br>
+			<select id="caixa">
+				<option value = 'mai'>MAIÚSCULAS</option>
+				<option value = 'min'>minúsculas</option>
+				<option value = 'ale'>Aleatório</option>
+			</select>
+			<br>
+			<input type="checkbox" id="incSpecChar">
+			Incluir caracteres especiais
+			<br>
+			<input type="button" id="btnGerar" value="Gerar senha" onclick="createPassword();"> 	
+			<br>
+			<input id="label" onclick="copy();" value="Sua senha aparecerá aqui!">
+	
+		<center><span class="copy">clique na senha para copiar</span></center>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
